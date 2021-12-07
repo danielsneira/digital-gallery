@@ -1,3 +1,5 @@
 /.babelrc
 /node_modules
 /package-lock.json
+.gitignore
+.env

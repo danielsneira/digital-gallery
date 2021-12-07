@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
 const dbConnection = async () => {
-	// const uri = "mongodb://localhost:27017/gallerydb"; //devUri
-	const uri = process.env.MONGODB_URI;
+	const uri = "mongodb://localhost:27017/gallerydb"; //devUri
+	// const uri = process.env.MONGODB_URI;
 	const options = {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
