@@ -9,6 +9,7 @@
     "build": "babel src --out-dir dist",
     "start": "node src/app"
   },
+  "type": "module",
   "keywords": [],
   "author": "Daniel",
   "license": "ISC",
