@@ -7,7 +7,7 @@
     "babel-node": "babel-node",
     "dev": "nodemon --exec npm run babel-node -- src/app.js",
     "build": "babel src --out-dir dist",
-    "start": "node dist/app.js"
+    "start": "node app"
   },
   "keywords": [],
   "author": "Daniel",
