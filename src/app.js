@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import history from "connect-history-api-fallback";
 import dbConnection from "./config/db.js";
-import artist from "./routes/artist";
-import art from "./routes/art";
+import artist from "./routes/artist.js";
+import art from "./routes/art.js";
 import auth from "./routes/auth.js";
 
 const app = express();
