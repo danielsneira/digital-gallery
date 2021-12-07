@@ -4,4 +4,6 @@ import { check } from 'express-validator';
 
 const router = Router();
 
+router.post('/follow', artistControllers.artistFollow)
+
 export default router

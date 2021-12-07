@@ -1,7 +1,8 @@
 import mongoose from "mongoose";
 
 const artSchema = mongoose.Schema({
-  artist: { type: mongoose.Schema.Types.ObjectId, ref: "artist", required: true },
+  artist: { type: mongoose.Schema.Types.ObjectId, ref: "Artist", required: true },
+  image: {type: String, required: true},
   caption: { type: String, unique: true, maxLength: 50 },
   likes: [],
   comments: [

@@ -6,7 +6,6 @@ import bcrypt from "bcryptjs";
 const authControllers = {
   signUp: async (req, res) => {
     const { fullname, email, password } = req.body;
-    console.log(req.body)
     const artist = new Artist({ fullname, email, password });
 
     const salt = bcrypt.genSaltSync();
@@ -36,7 +35,7 @@ const authControllers = {
       });
     }
 
-    const token = jwt.sign({ id: artist.id }, secret, { expiresIn: "1d" });
+    const token = jwt.sign({ id: artist.id }, secret, { expiresIn: "7d" });
 
     res.json({
       artist,
