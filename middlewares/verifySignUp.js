@@ -1,4 +1,4 @@
-import Artist from "../models/artist";
+import Artist from "../models/artist.js";
 
 const checkDuplicateEmail = (req, res, next) => {
   Artist.findOne({

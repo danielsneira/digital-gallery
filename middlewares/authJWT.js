@@ -1,6 +1,5 @@
 import jwt from "jsonwebtoken";
 import secret from "../config/auth.config";
-import Artist from "../models/artist";
 
 verifyToken = (req, res, next) => {
   let token = req.headers["x-access-token"];

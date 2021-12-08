@@ -1,5 +1,5 @@
-import secret from "../config/auth.config";
-import Artist from "../models/artist";
+import secret from "../config/auth.config.js";
+import Artist from "../models/artist.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 

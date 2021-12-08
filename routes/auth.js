@@ -1,5 +1,5 @@
-import checkDuplicateEmail from "../middlewares/verifySignUp";
-import authControllers from "../controllers/auth";
+import checkDuplicateEmail from "../middlewares/verifySignUp.js";
+import authControllers from "../controllers/auth.js";
 import { Router } from "express";
 
 const router = Router();

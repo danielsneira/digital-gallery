@@ -18,7 +18,7 @@ app.use("/api/auth", auth);
 //vuejs modo history necesario para SPA
 app.use(history());
 //vistas
-app.use(express.static(__dirname + "/public"));
+app.use(express.static("public"));
 
 app.set("port", process.env.PORT || 3000);
 app.listen(app.get("port"), () => {
